@@ -1,0 +1,103 @@
+INDEPENDENT FIRE INVESTIGATION REPORT
+
+Prepared by: Ridgeway Loss Adjusters & Assessors Ltd
+Report Reference: RWA/FIRE/2026/0341
+For: Amani General Insurance Company Limited
+Re: Mavuno Textiles Limited - Plot 14, Kariobangi Industrial Area, Nairobi
+Claim Reference: AGI/CLM/2026/1187
+Date of Report: 20 August 2026
+Date of Site Inspection: 8 August 2026
+
+1. INSTRUCTIONS
+
+We were instructed by Amani General Insurance Company Limited to attend the site,
+investigate the cause and origin of the fire of 3 August 2026, and to comment on
+the extent of loss and the condition of fire protection systems at the time of the
+incident.
+
+2. FINDINGS - CAUSE AND ORIGIN
+
+2.1 Physical examination of the fire scene indicates the fire originated in the
+    dye house, in the vicinity of Dyeing Vat No. 3, close to an electrical
+    distribution panel serving the dye house boiler.
+2.2 Char patterns and burn depth analysis are consistent with an electrical fault
+    at or near the distribution panel as the most probable ignition source. We
+    found no physical evidence of accelerant use, forced entry, or any indicator
+    consistent with deliberate ignition.
+2.3 The fire then spread rapidly into the adjoining warehouse through an open
+    connecting doorway. The warehouse contained loosely stored cotton lint and
+    packaging materials, which are highly combustible and contributed materially
+    to the speed of fire spread.
+2.4 In our professional opinion, the most probable cause of the fire is accidental,
+    arising from an electrical fault, with rapid spread aided by combustible
+    material storage practices in the warehouse. We are unable to entirely rule
+    out alternative causes given the extent of destruction in the immediate
+    vicinity of the point of origin, but no evidence was found to support any
+    cause other than accidental electrical fault.
+
+3. FINDINGS - FIRE PROTECTION SYSTEMS
+
+3.1 Sprinkler System: We requested maintenance and inspection records for the
+    automatic sprinkler system covering the dye house and warehouse, as required
+    under Warranty 1(a) of the Policy. At the time of our inspection, the Insured
+    was unable to produce a maintenance record for the preceding 9 months. Visual
+    inspection of sprinkler heads recovered from the debris in the dye house
+    showed at least 3 heads that appeared to have been painted over, which can
+    impair activation. We recommend the Insurer request the full maintenance
+    history directly from the service contractor named by the Insured
+    (Safeguard Fire Systems Ltd) to establish whether the system was in good
+    working order at the time of loss.
+3.2 Portable Extinguishers: Service tags confirmed extinguishers were serviced in
+    March 2026, consistent with the Insured's declaration and within policy
+    requirements.
+3.3 Housekeeping: We noted that cotton lint and packaging offcuts were stored in
+    open areas of the warehouse rather than in the fire-resistant bins specified
+    under Warranty 2 of the Policy, and were located significantly closer to the
+    production floor than the 15-metre separation specified. This is a probable
+    contributing factor to the speed and extent of fire spread, though it did not,
+    in our assessment, cause the fire's ignition.
+3.4 Fire Hydrant System: Found to be in working order and was used by the Nairobi
+    County Fire Brigade during firefighting operations.
+
+4. ESTIMATED EXTENT OF LOSS (Adjuster's Preliminary Assessment)
+
+  Buildings (dye house - total loss; warehouse - substantial damage):
+      Adjuster estimate:                          KES 34,500,000
+  Plant and Machinery (dyeing vats, boiler, ancillary equipment):
+      Adjuster estimate:                          KES 19,800,000
+  Stock (raw cotton, yarn, packaging - warehouse contents):
+      Adjuster estimate, pending final stock reconciliation:
+                                                    KES 21,000,000 to 24,000,000
+  Smoke damage to administration block:
+      Adjuster estimate:                           KES 650,000
+  ---------------------------------------------------------------------------
+  Preliminary Adjuster Estimate (Total):    KES 76,000,000 to 79,000,000
+
+This preliminary estimate is below the Insured's own claimed figure of
+KES 85,000,000, principally due to differences in the assessed value of destroyed
+stock, which remains subject to final reconciliation against stock records once
+the August ledger entries are made available.
+
+5. OBSERVATIONS RELEVANT TO POLICY WARRANTIES
+
+We note for the Insurer's consideration that the apparent lapse in sprinkler
+system maintenance (Warranty 1(a)) and the housekeeping practices observed
+(Warranty 2) may be relevant to the question of warranty compliance. We are not
+qualified to opine on the legal effect of any breach; this is a matter for the
+Insurer's claims and legal assessment. We can confirm, however, that the fire
+protection deficiencies noted above are, in our professional opinion, more likely
+than not to have contributed to the extent of the loss, even though they are not
+assessed as the cause of ignition.
+
+6. RECOMMENDATIONS
+
+  1. Obtain the full sprinkler maintenance history from Safeguard Fire Systems Ltd
+     directly.
+  2. Obtain finalised stock ledger entries for August 2026 to confirm stock loss.
+  3. Obtain invoices or asset register entries for machinery claimed as a total
+     loss to substantiate the claimed value.
+  4. We consider the claim, subject to the above outstanding items and the
+     Insurer's own assessment of warranty compliance, to be a genuine loss
+     arising from an accidental cause.
+
+Prepared by: S. Mutiso, Senior Loss Adjuster, Ridgeway Loss Adjusters & Assessors Ltd

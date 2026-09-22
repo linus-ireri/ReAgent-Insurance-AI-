@@ -10,84 +10,41 @@ import path from "path";
 
 // SOURCE FILES & CONFIG
 
-const pdfPaths = [
-  "./docs/MCS_timetable (1).pdf",
-  "./docs/JKUAT_Information_Guide.pdf"
-];
-
-
-const urls = [
-  "https://jkuat-ai.netlify.app/"
+const txtPaths = [
+  "./docs/01_policy.txt",
+  "./docs/02_reinsurance_treaty.txt",
+  "./docs/03_claim_form.txt",
+  "./docs/04_fire_investigation_report.txt"
 ];
 
 const VECTOR_STORE_PATH = "./vector_store";
 
-
-
-//  LOADERS
-async function loadPDFs() {
-  console.log("📄 Loading PDFs...");
+// LOADERS
+async function loadTextFiles() {
+  console.log("📄 Loading TXT source files...");
   const docs = [];
 
-  for (const pdfPath of pdfPaths) {
+  for (const txtPath of txtPaths) {
     try {
-      if (!fs.existsSync(pdfPath)) {
-        console.warn(`  Skipping missing file: ${pdfPath}`);
+      if (!fs.existsSync(txtPath)) {
+        console.warn(`  Skipping missing file: ${txtPath}`);
         continue;
       }
 
-      console.log(`  Loading: ${path.basename(pdfPath)}`);
-      const loader = new PDFLoader(pdfPath, {
-        splitPages: true,
+      console.log(`  Loading: ${path.basename(txtPath)}`);
+      const content = fs.readFileSync(txtPath, "utf8");
+
+      docs.push({
+        pageContent: content,
+        metadata: {
+          source: path.basename(txtPath),
+          type: "txt"
+        }
       });
 
-      const pdfDocs = await loader.load();
-
-      const actName = path.basename(pdfPath)
-        .replace(/\.pdf$/i, "")
-        .replace(/_/g, " ")
-        .trim();
-
-      pdfDocs.forEach(doc => {
-        doc.metadata = {
-          ...doc.metadata,
-          source: actName,
-          type: "pdf"
-        };
-      });
-
-      docs.push(...pdfDocs);
-      console.log(`  ✓ Loaded ${pdfDocs.length} pages`);
+      console.log(`  ✓ Loaded ${path.basename(txtPath)}`);
     } catch (error) {
-      console.error(`  ✗ Error loading ${pdfPath}:`, error.message);
-    }
-  }
-
-  return docs;
-}
-
-async function loadURLs() {
-  console.log("\n🌐 Loading URLs...");
-  const docs = [];
-
-  for (const url of urls) {
-    try {
-      console.log(`  Scraping: ${url}`);
-      const loader = new CheerioWebBaseLoader(url);
-      const urlDocs = await loader.load();
-
-      urlDocs.forEach(doc => {
-        doc.metadata = {
-          ...doc.metadata,
-          source: url,
-          type: "web"
-        };
-      });
-
-      docs.push(...urlDocs);
-      console.log(`  ✓ Loaded ${urlDocs.length} documents`);
-    } catch (error) {
-      console.error(`  ✗ Error loading ${url}:`, error.message);
+      console.error(`  ✗ Error loading ${txtPath}:`, error.message);
     }
   }
 
@@ -99,10 +56,9 @@ async function loadURLs() {
 async function main() {
   console.log("🚀 Starting RAG ingestion pipeline...\n");
 
-  // 1. Load all sources
-  const pdfDocs = await loadPDFs();
-  const urlDocs = await loadURLs();
-  const allDocs = [...pdfDocs, ...urlDocs];
+  // 1. Load all source files for the policy/treaty/claim dataset
+  const txtDocs = await loadTextFiles();
+  const allDocs = [...txtDocs];
 
   if (allDocs.length === 0) {
     console.error("❌ No documents loaded. Exiting.");
@@ -160,8 +116,7 @@ async function main() {
   // 6. Summary
   console.log("\n✅ Ingestion complete!");
   console.log("📈 Summary:");
-  console.log(`  - PDFs processed: ${pdfPaths.length}`);
-  console.log(`  - URLs scraped: ${urls.length}`);
+  console.log(`  - TXT files processed: ${txtPaths.length}`);
   console.log(`  - Total chunks: ${cleanDocs.length}`);
   console.log(`  - Vector store location: ${VECTOR_STORE_PATH}`);
 }

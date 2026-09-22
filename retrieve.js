@@ -24,7 +24,7 @@ async function main() {
   console.log(" Vector store loaded successfully.");
 
   // 3. Define a user query (you can replace or pass dynamically)
-  const query = "What courses are offered at JKUAT?";
+  const query = "What does the treaty say about claim referral thresholds?";
 
   console.log(`\n Searching top 5 most relevant chunks for:\n"${query}"\n`);
 

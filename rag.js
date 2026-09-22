@@ -16,7 +16,7 @@ async function main() {
   const vectorStore = await HNSWLib.load("vector_store", embeddings);
 
   // 🔍 Example question (replace or pass dynamically)
-  const question = "What courses are offered at JKUAT?";
+  const question = "What does the treaty say about claim referral thresholds?";
 
   console.log("\n🔎 Retrieving relevant context...");
   const results = await vectorStore.similaritySearch(question, 5);
@@ -32,17 +32,17 @@ async function main() {
 
   // 🧠 Strict, structured prompt to prevent hallucination
   const prompt = `
-You are VeritasRAG.AI, the official AI assistant for Jomo Kenyatta University of Agriculture and Technology (JKUAT). Your job is to answer the user's question *strictly and only* based on the provided context about JKUAT. If answer is found in the context, respond to what the user is asking. Be polite as well.
+You are ReAgent AI, an agentic claims and underwriting decision-support assistant for Kenya Reinsurance Corporation (Kenya Re). Your job is to answer the user's question *strictly and only* based on the provided context from policy documents, reinsurance treaties, claim forms, and investigation reports. If an answer is found in the context, respond to what the user is asking. Be professional and cite sources.
 
 If the answer cannot be found exactly in the context, respond with:
-"I don't have that information in my knowledge base. Please contact JKUAT's official channels for assistance."
+"I don't have that information in my knowledge base. A human reviewer should obtain the missing documentation or confirm with Kenya Re underwriting/claims."
 
 Follow these rules:
 - Do NOT invent or assume information.
-- Quote exact information about courses, academic programs, campus directions, learning hours, admissions when available.
+- Quote exact information about coverage, exclusions, retention, referral/escalation conditions, and claim facts when available.
 - Never mix information from outside the retrieved context.
 - Maintain a professional, helpful, and factual tone.
-- Always reference JKUAT when answering.
+- Produce recommendations with cited evidence; always defer final decisions to a human reviewer — never auto-approve or auto-deny claims.
 
 -----------------------
 Retrieved Context:
@@ -59,7 +59,7 @@ Answer:
     console.error("❌ No LLM API key found. Set GROQ_API_KEY.");
     process.exit(1);
   }
-  const groqModel = "qwen/qwen3.6-27b";
+  const groqModel = "qwen/qwen3.8-27b";
   const apiUrl = "https://api.groq.com/openai/v1/chat/completions";
 
   try {
@@ -67,7 +67,7 @@ Answer:
     const body = {
       model: groqModel,
       messages: [
-        { role: "system", content: "You are VeritasRAG.AI, the official assistant for Jomo Kenyatta University of Agriculture and Technology (JKUAT). Answer questions accurately based only on provided context about JKUAT's courses, academic programs, campus information, and university operations." },
+        { role: "system", content: "You are ReAgent AI, an agentic claims and underwriting decision-support assistant for Kenya Reinsurance Corporation (Kenya Re). Answer questions accurately based only on provided context from policy documents, reinsurance treaties, claim forms, and investigation reports. Cite evidence and always defer final claim decisions to a human reviewer." },
         { role: "user", content: prompt }
       ],
       temperature: 0.1, // 🔒 ensures factuality with minimal variation

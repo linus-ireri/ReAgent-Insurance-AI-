@@ -1,6 +1,6 @@
-# 🚀 Veritas AI Netlify Deployment Guide
+# 🚀 ReAgent AI Netlify Deployment Guide
 
-Complete guide to deploy your Lino.AI chatbot on Netlify with a custom domain.
+Complete guide to deploy ReAgent AI on Netlify with a custom domain.
 
 ## 📋 Prerequisites
 
@@ -19,7 +19,7 @@ Complete guide to deploy your Lino.AI chatbot on Netlify with a custom domain.
 
 2. **Project Structure**
    ```
-   Veritas/
+   ReAgent-AI/
      ├── public/
      │   ├── index.html
      │   ├── style.css
@@ -119,7 +119,7 @@ git push origin main
 
 ## 🎉 Success!
 
-Your Lino.AI chatbot is now deployed with:
+Your ReAgent AI app is now deployed with:
 - ✅ Fast global CDN
 - ✅ Automatic HTTPS
 - ✅ Continuous deployment
@@ -128,4 +128,4 @@ Your Lino.AI chatbot is now deployed with:
 
 ---
 
-**Built by Ireri Linus Mugendi for Veritas AI** 🤖
+**Built by Ireri Linus Mugendi for ReAgent AI** 🤖

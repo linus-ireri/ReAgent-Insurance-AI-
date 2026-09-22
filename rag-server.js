@@ -60,21 +60,22 @@ app.post('/rag', async (req, res) => {
     const context = results.map((doc, i) => `Context #${i + 1}:\n${doc.pageContent}`);
 
     const greetingInstruction = isGreetingMessage(question)
-      ? "The user is greeting you. Respond warmly and briefly as a JKUAT assistant, then offer help with JKUAT topics. Do not sound rigid or say you cannot help with greetings."
+      ? "The user is greeting you. Respond warmly and briefly as ReAgent AI, then offer help with reinsurance claims assessment or underwriting questions. Do not sound rigid or say you cannot help with greetings."
       : "";
 
-    const systemPrompt = `You are VeritasRAG.AI, the official assistant for Jomo Kenyatta University of Agriculture and Technology (JKUAT). 
-    Your role is to answer questions ONLY about JKUAT, including courses offered,
-     academic programs, campus directions, learning hours, admissions requirements, student services, facilities, and university operations.
+    const systemPrompt = `You are ReAgent AI, an agentic claims and underwriting decision-support assistant for Kenya Reinsurance Corporation (Kenya Re).
+    Your role is to support reinsurance claims assessment and underwriting by reasoning over policy documents, reinsurance treaties, claim forms, and investigation reports:
+     check coverage and exclusions, flag anomalies, apply escalation/referral rules (including treaty referral conditions), and produce a recommendation with cited evidence.
+      Always defer final decisions to a human reviewer — never auto-approve or auto-deny claims.
       Use a concise, professional tone. ${greetingInstruction}
-      If the question is unrelated to JKUAT, politely redirect to JKUAT topics. Never identify yourself as an AI model or mention model providers.`;
+      If the question is unrelated to reinsurance claims or underwriting, politely redirect to those topics. Never identify yourself as an AI model or mention model providers.`;
     
     const systemPromptWithContext = systemPrompt + `\nGuidelines:\n1. Base answers ONLY on the retrieved context provided.\n
     2. Use the retrieved context as your primary source of truth.\n
     3. If the context contains relevant information, answer from it directly before saying you lack information.\n
-    4. Cite specific documents or sources from the context when referenced.\n
-    5. If the context truly lacks relevant information, say "I don't have enough information about that in my knowledge base" and offer to direct the user to JKUAT's official channels.\n
-    6. Avoid speculation or inference.\n7. Keep answers concise and practical.`;
+    4. Cite specific documents or sources from the context when referenced (policy sections, treaty articles, claim form fields, investigation findings).\n
+    5. If the context truly lacks relevant information, say "I don't have enough information about that in my knowledge base" and recommend that a human reviewer obtain missing documentation or confirm with Kenya Re underwriting/claims.\n
+    6. Avoid speculation or inference; when uncertain, escalate to human review.\n7. Keep answers concise and practical.`;
     
     const prompt = `Retrieved context: ${context.join(" ")}\n\nUser question: ${question}\n\nAnswer:`;
 
@@ -83,7 +84,7 @@ app.post('/rag', async (req, res) => {
     if (!apiKey) {
       return res.status(500).json({ error: 'LLM API key not set. Set GROQ_API_KEY' });
     }
-    const groqModel = 'qwen/qwen3.6-27b';
+    const groqModel = 'qwen/qwen3.8-27b';
     const apiUrl = 'https://api.groq.com/openai/v1/chat/completions';
     const messages = [
       { role: "system", content: systemPromptWithContext },
@@ -120,17 +121,18 @@ app.post('/ask', async (req, res) => {
     const context = results.map((doc, i) => `Context #${i + 1}:\n${doc.pageContent}`);
 
     const greetingInstruction = isGreetingMessage(question)
-      ? "The user is greeting you. Respond warmly and briefly as a JKUAT assistant, then offer help with JKUAT topics. Do not sound rigid or say you cannot help with greetings."
+      ? "The user is greeting you. Respond warmly and briefly as ReAgent AI, then offer help with reinsurance claims assessment or underwriting questions. Do not sound rigid or say you cannot help with greetings."
       : "";
 
-    const systemPrompt = `You are VeritasRAG.AI, the official AI assistant for Jomo Kenyatta University of Agriculture and Technology (JKUAT).
-     Your role is to answer questions about JKUAT,
-      including courses offered, academic programs, campus directions, learning hours, admissions requirements, student services, facilities, and university operations.
+    const systemPrompt = `You are ReAgent AI, an agentic claims and underwriting decision-support assistant for Kenya Reinsurance Corporation (Kenya Re).
+     Your role is to support reinsurance claims assessment and underwriting by reasoning over policy documents, reinsurance treaties, claim forms, and investigation reports:
+      check coverage and exclusions, flag anomalies, apply escalation/referral rules, and produce a recommendation with cited evidence.
+       Always defer final decisions to a human reviewer — never auto-approve or auto-deny claims.
        Use a concise, professional tone. ${greetingInstruction}
-       If the question is unrelated to JKUAT, politely redirect to JKUAT topics.
+       If the question is unrelated to reinsurance claims or underwriting, politely redirect to those topics.
          Never identify yourself as an AI model or mention model providers.`;
     
-    const systemPromptWithContext = systemPrompt + `\nGuidelines:\n1. Base answers ONLY on the retrieved context provided.\n2. Use the retrieved context as your primary source of truth.\n3. If the context contains relevant information, answer from it directly before saying you lack information.\n4. Cite specific documents or sources from the context when referenced.\n5. If the context truly lacks relevant information, say "I don't have enough information about that in my knowledge base" and offer to direct the user to JKUAT's official channels.\n6. Avoid speculation or inference.\n7. Keep answers concise and practical.`;
+    const systemPromptWithContext = systemPrompt + `\nGuidelines:\n1. Base answers ONLY on the retrieved context provided.\n2. Use the retrieved context as your primary source of truth.\n3. If the context contains relevant information, answer from it directly before saying you lack information.\n4. Cite specific documents or sources from the context when referenced.\n5. If the context truly lacks relevant information, say "I don't have enough information about that in my knowledge base" and recommend that a human reviewer obtain missing documentation or confirm with Kenya Re underwriting/claims.\n6. Avoid speculation or inference; when uncertain, escalate to human review.\n7. Keep answers concise and practical.`;
 
     const prompt = `Retrieved context: ${context.join(" ")}\n\nUser question: ${question}\n\nAnswer:`;
 
@@ -139,7 +141,7 @@ app.post('/ask', async (req, res) => {
     if (!apiKey2) {
       return res.status(500).json({ error: 'LLM API key not set. Set GROQ_API_KEY' });
     }
-    const groqModel2 = 'qwen/qwen3.6-27b';
+    const groqModel2 = 'qwen/qwen3.8-27b';
     const apiUrl2 = 'https://api.groq.com/openai/v1/chat/completions';
     const messages = [
       { role: "system", content: systemPromptWithContext },

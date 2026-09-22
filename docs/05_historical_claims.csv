@@ -1,0 +1,31 @@
+claim_id,cedant,insured,industry,location,peril,sum_insured_kes,claimed_amount_kes,settled_amount_kes,sprinkler_present,extinguisher_serviced,previous_claims_count,cause_confirmed,days_to_notify,status
+HC-001,Amani General,Savanna Plastics Ltd,Manufacturing - Plastics,Nairobi,Fire,150000000,12000000,10500000,Yes,Yes,1,Electrical fault,5,Settled
+HC-002,Amani General,Rift Valley Grain Millers,Manufacturing - Food,Nakuru,Fire,210000000,18500000,17200000,Yes,Yes,0,Electrical fault,3,Settled
+HC-003,Amani General,Coastal Timber Works,Manufacturing - Timber,Mombasa,Fire,95000000,42000000,38000000,No,Yes,2,Electrical fault,9,Settled
+HC-004,Amani General,Highland Tea Packers,Manufacturing - Food,Kericho,Fire,60000000,4200000,4000000,Yes,Yes,0,Electrical fault,2,Settled
+HC-005,Amani General,Nyanza Steel Fabricators,Manufacturing - Metal,Kisumu,Fire,180000000,9800000,9800000,Yes,Yes,1,Welding spark,4,Settled
+HC-006,Amani General,Zuri Garments Ltd,Manufacturing - Textile,Nairobi,Fire,130000000,15600000,14100000,Yes,No,1,Electrical fault,6,Settled
+HC-007,Amani General,Athi River Cement Depot,Manufacturing - Cement,Machakos,Explosion,300000000,26000000,24500000,Yes,Yes,0,Boiler malfunction,7,Settled
+HC-008,Amani General,Lakeview Cold Storage,Warehousing,Kisumu,Fire,75000000,7100000,6800000,Yes,Yes,0,Electrical fault,3,Settled
+HC-009,Amani General,Pioneer Furniture Makers,Manufacturing - Wood,Nairobi,Fire,50000000,19500000,16000000,No,No,3,Electrical fault,15,Settled
+HC-010,Amani General,Mavuno Textiles Limited,Manufacturing - Textile,Nairobi,Fire,45000000,1200000,950000,Yes,Yes,0,Electrical fault,4,Settled
+HC-011,Amani General,Mavuno Textiles Limited,Manufacturing - Textile,Nairobi,Water damage,45000000,2800000,2400000,Yes,Yes,1,Burst pipe,6,Settled
+HC-012,Amani General,Equator Paints Ltd,Manufacturing - Chemicals,Nairobi,Fire,220000000,55000000,49000000,Yes,Yes,0,Chemical reaction,8,Settled
+HC-013,Amani General,Westlands Print & Pack,Manufacturing - Printing,Nairobi,Fire,40000000,3600000,3400000,Yes,Yes,0,Electrical fault,2,Settled
+HC-014,Amani General,Rift Foam Industries,Manufacturing - Foam/Plastics,Naivasha,Fire,110000000,68000000,61000000,No,No,1,Electrical fault,12,Settled
+HC-015,Amani General,Kenya Bottlers Depot,Warehousing,Nairobi,Fire,160000000,11200000,10800000,Yes,Yes,0,Electrical fault,3,Settled
+HC-016,Amani General,Uzima Dairy Processors,Manufacturing - Food,Eldoret,Fire,90000000,6300000,6100000,Yes,Yes,0,Electrical fault,4,Settled
+HC-017,Amani General,Savannah Leather Works,Manufacturing - Leather,Athi River,Fire,70000000,31000000,26500000,No,Yes,2,Electrical fault,11,Settled
+HC-018,Amani General,Nairobi Metal Recyclers,Manufacturing - Metal,Nairobi,Fire,55000000,4800000,4500000,Yes,Yes,1,Welding spark,3,Settled
+HC-019,Amani General,Great Lakes Fisheries Cold Store,Warehousing,Kisumu,Fire,85000000,9200000,8700000,Yes,Yes,0,Electrical fault,5,Settled
+HC-020,Amani General,Highland Coffee Millers,Manufacturing - Food,Nyeri,Fire,65000000,5100000,4900000,Yes,Yes,0,Electrical fault,2,Settled
+HC-021,Amani General,Kilimo Agro Processors,Manufacturing - Food,Thika,Fire,120000000,8700000,8400000,Yes,Yes,0,Electrical fault,3,Settled
+HC-022,Amani General,Nairobi Foam & Mattress Co,Manufacturing - Foam/Plastics,Nairobi,Fire,100000000,71000000,63000000,No,No,2,Undetermined,18,Under review
+HC-023,Amani General,Rift Valley Textile Mills,Manufacturing - Textile,Eldoret,Fire,175000000,22400000,20100000,Yes,Yes,1,Electrical fault,6,Settled
+HC-024,Amani General,Baraka Plastics & Packaging,Manufacturing - Plastics,Nairobi,Fire,60000000,5600000,5300000,Yes,Yes,0,Electrical fault,4,Settled
+HC-025,Amani General,Coast Sisal Processors,Manufacturing - Textile,Mombasa,Fire,48000000,3900000,3700000,Yes,Yes,0,Electrical fault,5,Settled
+HC-026,Amani General,Nairobi Warehousing Solutions,Warehousing,Nairobi,Fire,140000000,13500000,12900000,Yes,Yes,0,Electrical fault,3,Settled
+HC-027,Amani General,Eldo Grain Storage,Warehousing,Eldoret,Fire,95000000,7900000,7600000,Yes,Yes,1,Electrical fault,4,Settled
+HC-028,Amani General,Nyeri Timber & Joinery,Manufacturing - Timber,Nyeri,Fire,52000000,26000000,22000000,No,Yes,1,Electrical fault,10,Settled
+HC-029,Amani General,Mombasa Fuel Storage Depot,Warehousing,Mombasa,Fire,350000000,110000000,98000000,Yes,Yes,0,Electrical fault,2,Settled
+HC-030,Amani General,Mavuno Textiles Limited,Manufacturing - Textile,Nairobi,Fire,490000000,85000000,,No,Yes,2,Under investigation,1,Open - current claim

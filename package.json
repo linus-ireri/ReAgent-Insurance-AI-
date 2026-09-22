@@ -1,16 +1,16 @@
 {
   "type": "module",
-  "name": "ai-chatbot",
+  "name": "reagent-ai",
   "version": "1.0.0",
   "main": "rag-server.js",
   "scripts": {
     "start": "node rag-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["reinsurance", "claims", "underwriting", "rag", "kenya-re"],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "ReAgent AI — agentic claims and underwriting decision-support for Kenya Reinsurance Corporation (Kenya Re AI4I Hackathon 2026)",
   "dependencies": {
     "20": "^3.1.9",
     "@huggingface/inference": "^4.4.0",

@@ -7,6 +7,6 @@
   <rect x="28" y="60" width="14" height="4" fill="#F87060"/>
   
   <!-- Text -->
-  <text x="75" y="35" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#F87060">Veritas.AI</text>
-  <text x="75" y="60" font-family="Arial, sans-serif" font-size="14" fill="#F87060">Nurturing Mathematical and Applied Sciences</text>
+  <text x="75" y="35" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#F87060">ReAgent AI</text>
+  <text x="75" y="60" font-family="Arial, sans-serif" font-size="14" fill="#F87060">Claims &amp; Underwriting Decision Support</text>
 </svg>

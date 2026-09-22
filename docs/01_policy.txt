@@ -1,0 +1,96 @@
+MAVUNO TEXTILES LIMITED
+COMMERCIAL FIRE AND SPECIAL PERILS INSURANCE POLICY
+
+Insurer: Amani General Insurance Company Limited
+Policy Number: AGI/FIRE/2025/00842
+Insured: Mavuno Textiles Limited
+Risk Address: Plot 14, Kariobangi Industrial Area, Nairobi, Kenya
+Occupancy/Use: Textile manufacturing (spinning, weaving, dyeing and garment finishing)
+Period of Insurance: 1 January 2026 to 31 December 2026
+
+SECTION A: PROPERTY INSURED
+
+Item 1 - Buildings (factory shed, dye house, warehouse, administration block)
+  Sum Insured: KES 220,000,000
+
+Item 2 - Plant and Machinery (spinning frames, looms, dyeing vats, boilers, generators)
+  Sum Insured: KES 180,000,000
+
+Item 3 - Stock (raw cotton, yarn, finished garments, packaging materials)
+  Sum Insured: KES 90,000,000
+
+Total Sum Insured: KES 490,000,000
+
+SECTION B: PERILS COVERED
+
+This Policy covers loss or damage to the Property Insured caused by:
+  1. Fire
+  2. Lightning
+  3. Explosion (domestic boilers and gas only, unless extended)
+  4. Aircraft and other aerial devices
+  5. Riot, strike and malicious damage
+  6. Storm, tempest, flood
+  7. Impact by vehicles
+
+SECTION C: EXCLUSIONS
+
+This Policy does not cover:
+  1. Loss or damage caused by the insured's own wilful act or gross negligence.
+  2. Loss or damage arising from war, invasion, act of foreign enemy, civil war, or
+     terrorism, unless specifically bought back by endorsement.
+  3. Loss or damage where the Insured has failed to maintain the fire protection and
+     safety measures declared at inception (see Warranty 1 below).
+  4. Consequential loss, including loss of profits, business interruption, or loss of
+     market, unless separately insured under a Business Interruption Policy.
+  5. Loss or damage to electrical machinery caused by over-running, excessive pressure,
+     short circuiting, self-heating or leakage of electricity, unless fire ensues, in
+     which case only the ensuing fire damage is covered.
+  6. Loss or damage occurring while the premises are left unoccupied for a continuous
+     period exceeding 30 days, unless declared and agreed by the Insurer in writing.
+  7. Fines, penalties, or punitive damages of any kind.
+  8. Loss discovered more than 30 days after the Insured first became aware, or ought
+     reasonably to have become aware, of circumstances giving rise to a claim, unless
+     late notification is excused in writing by the Insurer.
+
+SECTION D: WARRANTIES
+
+Warranty 1 (Fire Protection Warranty): It is warranted that the Insured shall, at all
+times during the currency of this Policy, maintain in good working order:
+  (a) a functioning automatic sprinkler system covering the dye house and warehouse;
+  (b) portable fire extinguishers serviced within the preceding 12 months, positioned
+      at intervals not exceeding 30 metres throughout the factory floor;
+  (c) a fire hydrant system connected to a water reserve of not less than 50,000 litres;
+  (d) an internal fire brigade or trained fire marshal team of not fewer than 6 persons
+      per shift.
+Breach of this Warranty, if material to the cause or extent of the loss, entitles the
+Insurer to decline or reduce indemnity in respect of the affected claim.
+
+Warranty 2 (Housekeeping Warranty): It is warranted that flammable waste (cotton
+lint, thread ends, packaging offcuts) shall be removed from production areas at the
+end of each working shift and stored in designated fire-resistant bins located at
+least 15 metres from the main production floor.
+
+SECTION E: EXCESS/DEDUCTIBLE
+
+Each and every claim: KES 2,500,000, or 2% of the claim amount, whichever is greater.
+
+SECTION F: CONDITIONS PRECEDENT TO LIABILITY
+
+  1. The Insured shall notify the Insurer within 14 days of any occurrence likely to
+     give rise to a claim.
+  2. The Insured shall furnish all information and documentary evidence reasonably
+     required by the Insurer, including invoices, stock records, and maintenance
+     records for fire protection equipment.
+  3. The Insured shall take all reasonable steps to minimise or avert loss.
+  4. No admission, offer, promise, or payment shall be made by or on behalf of the
+     Insured without the written consent of the Insurer.
+
+SECTION G: REINSURANCE NOTE (for internal cedant use)
+
+This risk is ceded under the Amani General Insurance Company Limited Fire and Special
+Perils Surplus Treaty with Kenya Reinsurance Corporation Limited, Treaty Reference
+KR/AGI/SUR/2026, subject to the terms of that treaty. Any claim under this Policy
+exceeding the cedant's retention shall be notified to Kenya Reinsurance Corporation
+Limited within 14 days of the cedant becoming aware of it.
+
+Signed for and on behalf of Amani General Insurance Company Limited.

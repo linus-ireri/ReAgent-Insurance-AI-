@@ -1,10 +1,10 @@
-# VeritasAI and VeritasRAG Chatbot
+# ReAgent AI
 
-A modern AI chatbot project featuring Retrieval-Augmented Generation (RAG), vector search, and multi-channel support (web, WhatsApp, API). Built with Node.js, Express, Netlify Functions, and modern AI libraries.
+Agentic claims and underwriting decision-support for reinsurance, built for the Kenya Re AI4I Hackathon 2026 (theme: Redefining Reinsurance Business Processes with Agentic AI and Machine Learning). Uses Retrieval-Augmented Generation (RAG), vector search, and multi-channel support (web, WhatsApp, API).
 
 ## Features
-- Conversational AI chatbot with rule-based and LLM-powered responses
-- Retrieval-Augmented Generation (RAG) using vector search
+- Decision-support chatbot for reinsurance claims assessment and underwriting
+- Retrieval-Augmented Generation (RAG) over policy, treaty, claim, and investigation documents
 - Web frontend (static HTML/CSS/JS)
 - WhatsApp integration via webhook
 - Secure, rate-limited Express server for RAG
@@ -12,13 +12,13 @@ A modern AI chatbot project featuring Retrieval-Augmented Generation (RAG), vect
 
 ## Project Structure
 ```
-jkuatAI/
+ReAgent-AI/
   public/           # Frontend (index.html, chat.js, style.css, SVGs)
   netlify/functions/ # Netlify serverless functions (askai.js, chat.js, whatsapp-webhook.js)
   rag-server.js     # Express RAG server
   rag.js, retrieve.js # RAG utilities and scripts
   vector_store/     # Vector DB files
-  docs/             # Documentation PDFs
+  docs/             # Policy, treaty, claim form, investigation report, historical claims
 ```
 
 ## Getting Started

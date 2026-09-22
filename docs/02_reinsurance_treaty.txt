@@ -1,0 +1,117 @@
+KENYA REINSURANCE CORPORATION LIMITED
+FIRE AND SPECIAL PERILS SURPLUS REINSURANCE TREATY
+
+Treaty Reference: KR/AGI/SUR/2026
+Reinsurer: Kenya Reinsurance Corporation Limited ("Kenya Re")
+Cedant: Amani General Insurance Company Limited ("the Cedant")
+Class of Business: Fire and Special Perils (Commercial and Industrial risks)
+Treaty Type: Surplus (proportional)
+Period: 1 January 2026 to 31 December 2026, and each anniversary thereafter unless
+terminated in accordance with Article 14.
+
+ARTICLE 1 - SCOPE
+
+This Treaty covers the Cedant's Fire and Special Perils portfolio written in the
+Republic of Kenya, including manufacturing, warehousing, commercial and industrial
+occupancies, subject to the terms, conditions, limits and exclusions set out below.
+
+ARTICLE 2 - CEDANT'S RETENTION AND TREATY CAPACITY
+
+2.1 The Cedant's retention (Line) for any one risk is KES 50,000,000 of Sum Insured.
+2.2 The Treaty provides 8 Lines of automatic surplus capacity, being KES 400,000,000
+    in excess of the Cedant's retention, giving total automatic capacity of
+    KES 450,000,000 per risk.
+2.3 Kenya Re participates on each risk ceded in the same proportion as the surplus
+    amount bears to the total Sum Insured of that risk (the "Cession Percentage").
+2.4 Kenya Re's share of any claim is calculated by applying the Cession Percentage
+    to the amount of the claim payable by the Cedant under the original Policy,
+    after deduction of the Policy excess.
+
+ARTICLE 3 - RISKS REQUIRING ENHANCED ASSESSMENT
+
+3.1 Any risk with a total Sum Insured exceeding KES 300,000,000 shall be classified
+    as an Enhanced Assessment Risk.
+3.2 For Enhanced Assessment Risks, the Cedant shall, prior to binding cover, provide
+    Kenya Re with: (a) a detailed risk survey report not older than 24 months;
+    (b) confirmation of fire protection measures in place; (c) loss history for the
+    preceding 5 years; and (d) construction and occupancy details.
+3.3 Underwriting guideline reference: Section 4.2 of the Kenya Re Underwriting
+    Manual requires that Enhanced Assessment Risks be reviewed by a Senior
+    Underwriter before automatic cession is confirmed, and that any risk with
+    Sum Insured exceeding KES 400,000,000 be referred for facultative
+    consideration outside this Treaty.
+
+ARTICLE 4 - EXCLUSIONS UNDER THE TREATY
+
+This Treaty excludes and Kenya Re shall have no liability in respect of:
+  4.1 War, invasion, act of foreign enemy, hostilities, civil war, rebellion,
+      insurrection, or terrorism.
+  4.2 Nuclear risks of any kind.
+  4.3 Losses arising from the Cedant's failure to comply with a Warranty under the
+      original Policy, where such failure is material to the loss.
+  4.4 Losses where the original Policy excess has not first been applied.
+  4.5 Business interruption or consequential loss, unless separately agreed by
+      addendum to this Treaty.
+  4.6 Any risk bound by the Cedant in breach of the underwriting guidelines
+      referenced in Article 3.3.
+
+ARTICLE 5 - CLAIMS NOTIFICATION AND COOPERATION
+
+5.1 The Cedant shall notify Kenya Re within 14 days of becoming aware of any claim
+    or circumstance likely to involve this Treaty, and in any event immediately for
+    any claim where the estimated gross loss exceeds KES 20,000,000.
+5.2 The Cedant shall provide Kenya Re with all documentation reasonably required to
+    assess the claim, including the claim form, original Policy, loss adjuster or
+    investigation reports, invoices, photographs, and any other supporting evidence.
+5.3 Kenya Re shall be entitled to appoint its own loss adjuster, at its own cost, to
+    review any claim where the Cedant's estimated gross loss exceeds
+    KES 50,000,000, or where Kenya Re reasonably considers the claim to be unusual
+    having regard to the Cedant's historical claims experience under this Treaty.
+5.4 Claims shall be settled by the Cedant in accordance with the terms of the
+    original Policy. Kenya Re shall follow the fortunes of the Cedant, provided
+    that the claim has been handled by the Cedant in good faith and in accordance
+    with the terms of the original Policy and this Treaty.
+
+ARTICLE 6 - CLAIMS REQUIRING PRIOR REFERRAL TO KENYA RE
+
+6.1 Notwithstanding Article 5.4, the Cedant shall obtain Kenya Re's prior written
+    agreement before settling any claim where:
+    (a) the estimated gross loss exceeds KES 60,000,000; or
+    (b) there is a reasonable suspicion of arson, fraud, or material
+        misrepresentation at inception; or
+    (c) the cause of loss, or the applicability of a Policy exclusion or
+        Warranty, is genuinely in doubt; or
+    (d) required documentation under the original Policy (including but not
+        limited to fire investigation or loss adjuster reports) has not yet
+        been furnished.
+6.2 Where none of the conditions in Article 6.1 apply, and the claim is otherwise
+    consistent with the Cedant's normal claims experience, the Cedant may proceed
+    to settle the claim without further reference to Kenya Re, subject to
+    Article 5.2.
+
+ARTICLE 7 - PREMIUM AND COMMISSION
+
+Kenya Re shall receive its Cession Percentage of the original gross premium, less
+a ceding commission of 30%, payable quarterly.
+
+ARTICLE 8 - CURRENCY
+
+All amounts under this Treaty are expressed in Kenya Shillings (KES) unless
+otherwise stated.
+
+ARTICLE 9 - CATASTROPHE PROTECTION
+
+This Treaty operates net of the Cedant's own Catastrophe Excess of Loss
+protection, where applicable. A single occurrence affecting multiple risks ceded
+under this Treaty shall be aggregated for the purposes of any such protection.
+
+ARTICLE 10 to 13 - [General conditions: arbitration, errors and omissions,
+inspection of records, offset, taxation - standard treaty wording, on file with
+both parties.]
+
+ARTICLE 14 - DURATION AND TERMINATION
+
+This Treaty renews annually unless either party gives not less than 3 months'
+written notice prior to any anniversary date.
+
+Executed between the Cedant and Kenya Reinsurance Corporation Limited.

@@ -1,21 +1,21 @@
 import { cleanLlmAnswer } from "../../lib/clean-llm-answer.js";
 
 const greetingResponses = {
-  "who are you": "I am Veritas.AI, the official assistant for Jomo Kenyatta University of Agriculture and Technology. I can help with courses, campus directions, learning hours, academic programs, admissions, and student services. How can I assist you today?",
-  "hello": "Hello! Welcome to Veritas.AI. Ask me about JKUAT courses, academic programs, campus directions, learning hours, admissions, or student services.",
-  "hi": "Hi there! You're chatting with Veritas.AI. How can I help you with JKUAT today?",
-  "hey": "Hello! This is Veritas.AI — I can answer questions about JKUAT courses, academic programs, campus directions, learning hours, and student information.",
-  "how are you": "I'm here to help with JKUAT questions — what would you like to know about courses, campus, or student services?",
-  "good morning": "Good morning! JKUAT.AI at your service — would you like information about courses, campus directions, or learning hours?",
-  "good afternoon": "Good afternoon! Veritas.AI can help with courses, campus information, learning hours, and academic programs.",
-  "good evening": "Good evening! Ask me about JKUAT courses, campus directions, learning hours, or student services."
+  "who are you": "I am ReAgent AI, a decision-support agent for Kenya Reinsurance Corporation (Kenya Re). I help assess reinsurance claims and underwriting questions using policy documents, treaties, claim forms, and investigation reports. Final decisions always stay with a human reviewer. How can I assist you today?",
+  "hello": "Hello! Welcome to ReAgent AI. Ask me about treaty referral thresholds, coverage and exclusions, claim documentation, or underwriting guidelines for Kenya Re.",
+  "hi": "Hi there! You're chatting with ReAgent AI. How can I help with a reinsurance claim or underwriting question today?",
+  "hey": "Hello! This is ReAgent AI — I can help with policy coverage, treaty clauses, claim referral conditions, and investigation findings for Kenya Re.",
+  "how are you": "I'm ready to help with reinsurance claims and underwriting — what would you like to review: coverage, exclusions, referral rules, or a specific claim?",
+  "good morning": "Good morning! ReAgent AI at your service — ask about claim referral thresholds, coverage checks, or treaty conditions.",
+  "good afternoon": "Good afternoon! ReAgent AI can help with policy coverage, treaty referral clauses, claim forms, and investigation reports.",
+  "good evening": "Good evening! Ask me about Kenya Re treaty clauses, claim coverage, exclusions, or escalation conditions."
 };
 
 const commonQueries = {
-  "what do you do": "I assist with questions about JKUAT, including courses, academic programs, campus directions, learning hours, admissions, and student services.",
-  "how can you help": "I can provide information about JKUAT courses, academic programs, campus directions, contact details, learning hours, and student services. Feel free to ask!",
-  "what information do you have": "I have information about JKUAT's courses, academic programs, campus directions, learning hours, admissions requirements, and student services.",
-  "help": "I can help you with JKUAT questions. Ask about our courses, academic programs, campus directions, learning hours, or student services."
+  "what do you do": "I support reinsurance claims assessment and underwriting for Kenya Re: retrieve relevant policy/treaty clauses, check coverage and exclusions, flag anomalies, apply escalation/referral rules, and produce a cited recommendation for human review.",
+  "how can you help": "I can retrieve treaty and policy clauses, check whether a claim appears covered or excluded, flag missing documents or anomalies, and highlight referral conditions that require human escalation. Try asking: \"What does the treaty say about claim referral thresholds?\"",
+  "what information do you have": "I work from the knowledge base of policy wording, the reinsurance treaty, claim forms, fire investigation reports, and related claims context for Kenya Re decision support.",
+  "help": "Ask about coverage, exclusions, treaty retention/capacity, claim referral thresholds (e.g. Article 6), missing documentation, or whether a claim should be escalated to a human reviewer."
 };
 
 function normalize(text) {
@@ -45,7 +45,7 @@ function buildRuleBasedContextBlock() {
     ([intent, text]) => `- When the user asks about "${intent}": ${text}`
   );
   return [
-    "Official reference snippets for common greetings and queries (match intent; you may paraphrase naturally while keeping the same facts and JKUAT focus):",
+    "Official reference snippets for common greetings and queries (match intent; you may paraphrase naturally while keeping the same facts and ReAgent AI / Kenya Re focus):",
     "",
     "Greetings / identity:",
     ...greetingLines,
@@ -68,11 +68,11 @@ function ragBaseAndAsk() {
 
 async function llmWithRuleContext(userMessage) {
   const ruleContext = buildRuleBasedContextBlock();
-  const systemContent = `You are Veritas, the official JKUAT.AI assistant for Jomo Kenyatta University of Agriculture and Technology (JKUAT). Answer questions about JKUAT courses, programs, campus, admissions, and services. Be concise and professional. Document RAG is offline: use the reference snippets in the next message when they match the user's intent; for other JKUAT topics use general knowledge; for non-JKUAT topics, politely redirect.`;
+  const systemContent = `You are ReAgent AI, an agentic claims and underwriting decision-support assistant for Kenya Reinsurance Corporation (Kenya Re). Support reinsurance claims assessment and underwriting by reasoning over policy documents, reinsurance treaties, claim forms, and investigation reports. Check coverage and exclusions, flag anomalies, apply escalation/referral rules, and produce recommendations with cited evidence. Always defer final decisions to a human reviewer — never auto-approve or auto-deny claims. Be concise and professional. Document RAG is offline: use the reference snippets in the next message when they match the user's intent; for other claims/underwriting topics use careful general reasoning or recommend human review; for unrelated topics, politely redirect.`;
   const groqKey = process.env.GROQ_API_KEY;
   if (!groqKey) throw new Error('Missing GROQ_API_KEY');
   const apiUrl = "https://api.groq.com/openai/v1/chat/completions";
-  const model = "qwen/qwen3.6-27b";
+  const model = "qwen/qwen3.8-27b";
 
   const llmRes = await fetch(apiUrl, {
     method: "POST",
@@ -249,7 +249,7 @@ export const handler = async function (event, context) {
     const data = await response.json();
     console.log("RAG Response:", data);
 
-const cleanedReply = cleanLlmAnswer(data?.answer) || "Hello! I'm Veritas, the official JKUAT AI assistant. Ask me about JKUAT courses, campus directions, learning hours, academic programs, admissions, or student services.";
+const cleanedReply = cleanLlmAnswer(data?.answer) || "Hello! I'm ReAgent AI, a decision-support agent for Kenya Re. Ask me about treaty referral thresholds, coverage and exclusions, claim documentation, or underwriting guidelines.";
 
     return {
       statusCode: 200,

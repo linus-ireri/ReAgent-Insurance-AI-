@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
       loadConversation(conversations[0].id);
     }
 
-    console.log("🤖 Chatbot initialized");
+    console.log("ReAgent AI initialized");
   }
 
   // --- Event Handlers ---
