@@ -8,6 +8,7 @@ import { HNSWLib } from "@langchain/community/vectorstores/hnswlib";
 import { HuggingFaceTransformersEmbeddings } from "@langchain/community/embeddings/huggingface_transformers";
 
 import { cleanLlmAnswer } from './lib/clean-llm-answer.js';
+import { runAgent } from './lib/agent.js';
 
 const app = express();
 app.set('trust proxy', 1); // Trust first proxy (ngrok)
@@ -166,6 +167,22 @@ app.post('/ask', async (req, res) => {
   } catch (err) {
     console.error('RAG error:', err);
     res.status(500).json({ error: 'RAG retrieval failed' });
+  }
+});
+
+// New agentic endpoint using tool-calling loop (keeps /ask and /rag unchanged)
+app.post('/agent', async (req, res) => {
+  const { question, claimId } = req.body || {};
+  if (!question || typeof question !== 'string') {
+    return res.status(400).json({ error: 'Missing or invalid question' });
+  }
+
+  try {
+    const result = await runAgent({ question, claimId, vectorStore });
+    res.json(result);
+  } catch (err) {
+    console.error('Agent error:', err);
+    res.status(500).json({ error: 'Agent failed', details: err.message || err });
   }
 });
 
