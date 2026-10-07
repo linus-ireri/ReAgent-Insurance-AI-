@@ -16,6 +16,7 @@ async function fetchWithTimeout(url, { method = "GET", headers = {}, body, timeo
       body,
       signal: controller.signal,
     });
+  
 
     const text = await response.text();
     let data = null;
